@@ -1,0 +1,227 @@
+/* Enhanced CSS for Zero Waste Network */
+
+/* Resetting default margin for images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Keyframes for animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInLeft {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+    from { opacity: 0; transform: translateX(20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #0e0d0d;
+}
+
+/* Header styles */
+header {
+    background-color: #35424a;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content:safe;
+    align-items: center;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    height: 70px; /* Increased size */
+    margin-right: 20px;
+    background-color:#35424a ; /* Ensure transparency */
+    mix-blend-mode:color-burn;
+    margin-left: 5px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 320px;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #1c1f1c;
+}
+
+/* Hero section styles */
+#home {
+    background: url('https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+    color: #eaf6ea;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#home h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#home p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    animation: fadeIn 3s ease-in-out;
+}
+
+#home button {
+    background-color: #3a563a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#home button:hover {
+    background-color: #2f702f;
+}
+
+/* Section styles */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Content grid styles */
+.content-grid {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.content-item {
+    flex: 1;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.content-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.content-item.fadeInLeft {
+    animation: fadeInLeft 2s ease-in-out;
+}
+
+.content-item.fadeInRight {
+    animation: fadeInRight 2s ease-in-out;
+}
+
+/* Benefits section styles */
+.benefits-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.benefit-item {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.benefit-item i {
+    font-size: 3rem;
+    color: #3d8b3d;
+    margin-bottom: 10px;
+}
+
+.benefit-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #35424a;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #1c1f1c;
+}
+
+footer p {
+    margin: 10px 0;
+}
